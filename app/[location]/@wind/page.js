@@ -1,7 +1,8 @@
+import WindComponent from "@/components/WindComponent"
 
-const WindPage = () => {
+const WindPage = ({params:{location},searchParams:{latitude,longitude}}) => {
   return (
-    <div>WindPage</div>
+    <WindComponent lat={latitude} lon={longitude}/>
   )
 }
 
