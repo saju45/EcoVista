@@ -1,7 +1,8 @@
+import LocationInfo from "@/components/LocationInfo"
 
-const page = () => {
+const page = ({params:{location},searchParams:{latitude,longitude}}) => {
   return (
-    <div>Location Page</div>
+    <LocationInfo lat={latitude} lon={longitude}/>
   )
 }
 
